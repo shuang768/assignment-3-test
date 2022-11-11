@@ -26,13 +26,17 @@
       </header>
       
       <main class="mdl-layout__content" style="margin-left:75px;">
-    <p text>Choose your pizza size</p>
-    <form  action="handler.php" method=post>
-      <input type="radio" id="large" name="pizza_size" value="1">
-      <label for="large">large $6.00</label><br>
-      <input type="radio" id="extra_large" name="pizza_size" value="2">
-      <label for="extra_large">extra large $10.00</label><br>
-      <input type="radio" id="cancel_order" name="pizza_size" value="3">
-      <label for="cancel_order">cancel order</label><br><br>
+      <p text>Choose your pizza toppings</p>
+      <form  action="handler2.php" method=post>
+      <input type="radio" id="1t" name="toppings" value="1">
+      <label for="1t">1 toppings $1.00</label><br>
+      <input type="radio" id="2t" name="toppings" value="2">
+      <label for="2t">2 toppings $1.75</label><br>
+      <input type="radio" id="3t" name="toppings" value="3">
+      <label for="3t">3 toppings $2.50</label><br>
+      <input type="radio" id="4t" name="toppings" value="4">
+      <label for="4t">4 toppings $3.25</label><br>
+      <input type="radio" id="0t" name="toppings" value="0">
+      <label for="0t">cancel order</label><br><br>
       <input type="submit" value="Submit">
     </form>
