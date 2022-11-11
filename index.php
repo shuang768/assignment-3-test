@@ -27,12 +27,12 @@
       
       <main class="mdl-layout__content" style="margin-left:75px;">
     <p text>Choose your pizza size</p>
-    <form action="handler.php" method=post>
-      <input type="radio" id="large" name="pizza_size" value="large">
+    <form  action="handler.php" method=post>
+      <input type="radio" id="large" name="pizza_size" value="1">
       <label for="large">large $6.00</label><br>
-      <input type="radio" id="extra_large" name="pizza_size" value="extra_large">
+      <input type="radio" id="extra_large" name="pizza_size" value="2">
       <label for="extra_large">extra large $10.00</label><br>
-      <input type="radio" id="cancel_order" name="Pizza_size" value="cancel_order">
+      <input type="radio" id="cancel_order" name="pizza_size" value="3">
       <label for="cancel_order">cancel order</label><br><br>
       <input type="submit" value="Submit">
     </form>

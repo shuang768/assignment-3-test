@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
   <head>
@@ -26,12 +26,15 @@
       </header>
       
       <main class="mdl-layout__content" style="margin-left:75px;">
-        <?php
-            if (isset($_POST['pizza_size'])&& $_POST['pizza_size']==1){
-          $m=$m+6.00;}
-            elseif (isset($_POST['pizza_size'])&& $_POST['pizza_size']==2){
-          $m=$m+10.00;}
-            elseif (isset($_POST['pizza_size'])&& $_POST['pizza_size']==3){
-          echo "order cancelled";}
-            else { echo "<meta http-equiv=\"refresh\" content=\"0; url=https://test.shuang768.repl.co?error=1\">";}?>
-</html>
+    <p text>Choose your pizza toppings</p>
+    <form  action="handler2.php" method=post>
+      <input type="radio" id="1t" name="toppings" value="1">
+      <label for="1t">1 toppings $1.00</label><br>
+      <input type="radio" id="2t" name="toppings" value="2">
+      <label for="2t">2 toppings $1.75</label><br>
+      <input type="radio" id="3t" name="toppings" value="3">
+      <label for="3t">3 toppings $2.50</label><br><br>
+      <input type="radio" id="4t" name="toppings" value="4">
+      <label for="4t">4 toppings $3.25</label><br><br>
+      <input type="submit" value="Submit">
+    </form>
