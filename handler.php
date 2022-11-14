@@ -27,11 +27,7 @@
       
       <main class="mdl-layout__content" style="margin-left:75px;">
         <?php
-            if (isset($_POST['pizza_size'])&& $_POST['pizza_size']==1){
-            echo "<meta http-equiv=\"refresh\" content=\"0; url=?$m=$m+6.00\">";}
-            elseif (isset($_POST['pizza_size'])&& $_POST['pizza_size']==2){
-          $m=$m+10.00;}
-            elseif (isset($_POST['pizza_size'])&& $_POST['pizza_size']==0){
-          echo "order cancelled";}
-            else { echo "<meta http-equiv=\"refresh\" content=\"0; url=https://test.shuang768.repl.co?error=1\">";}?>
+$m=$_POST['pizza_size']+$_POST['toppings']+$m;
+echo "this order cost you ";
+echo round($m*1.13,2);?>
 </html>
