@@ -28,6 +28,13 @@
       <main class="mdl-layout__content" style="margin-left:75px;">
         <?php
 $m=$_POST['pizza_size']+$_POST['toppings']+$m;
-echo "this order cost you ";
-echo round($m*1.13,2);?>
+if ($_POST['pizza_size']==0){
+  echo "order canceled";
+}
+  elseif ($_POST['toppings']==0){
+  echo "order canceled";
+  }
+  else{
+echo "this order cost you $";
+echo round($m*1.13,2);}?>
 </html>
