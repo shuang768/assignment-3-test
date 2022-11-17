@@ -27,7 +27,7 @@
       
       <main class="mdl-layout__content" style="margin-left:75px;">
         <?php
-$m=$_POST['pizza_size']+$_POST['toppings']+$m;
+$m=$_POST['pizza_size']+$_POST['toppings'];
 if ($_POST['pizza_size']==0){
   echo "order canceled";
 }
@@ -35,6 +35,24 @@ if ($_POST['pizza_size']==0){
   echo "order canceled";
   }
   else{
-echo "this order cost you $";
+    if ($_POST['pizza_size']==6.00){
+      $size="large";
+    }
+    elseif ($_POST['pizza_size']==10.00){
+      $size="extra large";
+    }
+    if ($_POST['toppings']==1.00){
+      $toppings="1 toppings";
+    }
+    elseif ($_POST['toppings']==1.75){
+      $toppings="2 toppings";
+    }
+    elseif ($_POST['toppings']==2.50){
+      $toppings="3 toppings";
+    }
+    elseif($_POST['toppings']==3.25){
+      $toppings="4 toppings";
+    }
+echo "your $size pizza with $toppings cost you $";
 echo round($m*1.13,2);}?>
 </html>
